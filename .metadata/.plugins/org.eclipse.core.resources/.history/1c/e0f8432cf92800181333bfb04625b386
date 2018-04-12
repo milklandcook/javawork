@@ -1,0 +1,15 @@
+package javastudy;
+
+public class WhileEx {
+	
+	public static void main(String[] args) {
+		
+		//1-10까지 합 ==> for을 while문으로
+		int i=1, sum=0;
+		while (i<=10){
+			sum+=i;
+			i++; //for(int i=0; i<=10; i++)
+		}
+		System.out.println("결과"+sum);
+	}
+}

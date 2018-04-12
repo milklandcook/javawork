@@ -1,0 +1,59 @@
+package javastudy1;
+
+import javafx.scene.shape.Shape;
+
+class shape {
+	public void draw(){
+		System.out.println("도형");
+	}//접근자 리턴타입 메서드이름(매개변수..)
+}
+
+class Line extends Shape{
+	public void draw(){
+		System.out.println("선");
+	}
+
+	@Override
+	public com.sun.javafx.geom.Shape impl_configShape() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}
+
+class Rect extends Shape {
+	public void draw() {
+		System.out.println("사각형");
+	}
+
+	@Override
+	public com.sun.javafx.geom.Shape impl_configShape() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}
+
+class Circle extends Shape {
+	public void draw() {
+		System.out.println("원");
+	}
+
+	@Override
+	public com.sun.javafx.geom.Shape impl_configShape() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	}
+		
+public class OverridingEx {
+	static void paint(Shape p){
+		p.draw(); //상위클래스에 있는 draw()
+	}
+	public static void main(String[] args) {
+		//메서드 호출
+		Line line = new Line();
+		paint(line); // shape line ==>
+		// TODO Auto-generated method stub
+
+	}
+
+}
